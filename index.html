@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
-
   <body>
+<main class="flex-row justify=space-between">
+  <div class="card">
+    <h3 class="card-header text-uppercase">Search By City</h3>
+    <form id="user-form" class="card-body">
+      <label class="form-label" for="U.S. City">Select City</label>
+      <input city="city" id="city" type="text" autofocus="true" class="form-input" />
+      <button type="SUBMIT" class="btn">Get Weather</button>
+    </form>
+  </div>
+  <div class="col-12 col-md-4"></div>
+  <div class="col-12 col-md-8"></div>
+</main>
+
+    <h1> todays weather</h1>
     <h1 id="temperature"></h1>
     <h2 id="description"></h2>
     <p id="location"></p>
   </body> 
 
-  <script src="./assets/script.js"></script>
+  <script src="./script.js"></script>
 </html>
