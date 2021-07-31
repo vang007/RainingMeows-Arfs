@@ -4,25 +4,25 @@ let apiKey = "6ba1a36343cffd3493f18deba94fd15d";
 //    let apiKey = "6ba1a36343cffd3493f18deba94fd15d";      //
 
 var location = document.querySelector("city");
-var SubmitHandler = function (event) {
+var formSubmitHandler = function (event) {
     event.preventDefault();
     console.log(event);
 };
 
-location.addEventListener("submit", SubmitHandler);
+location.addEventListener("submit", formSubmitHandler);
 
 
 
 
 
-// function getWeather() {
-//     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${"Dallas"}&appid=${apiKey}`)
-//         .then(function (res) {
-//             return res.json()
-//         }).then(function (data) {
-//             console.log(data);
-//         })
-// };
+function getWeather() {
+    fetch(`https://api.openweathermap.org${"Dallas"}&appid=${apiKey}`)
+        .then(function (res) {
+            return res.json()
+        }).then(function (data) {
+            console.log(data);
+        })
+};
 
 
 // let temperature = document.getElementById("temperature");
